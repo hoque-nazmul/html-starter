@@ -1,0 +1,46 @@
+/*
+    Media Queries
+---------------------------------*/
+
+$small-laptop-width: (min-width: 960px);
+$default-laptop-width: (min-width: 1200px);
+$large-laptop-width: (min-width: 1300px);
+$default-desktop-width: (min-width: 1400px);
+$large-desktop-width: (min-width: 1600px);
+
+
+
+/* ----- Laptop size 960px or greater ----- */
+@mixin smallLaptop {
+    @media #{$small-laptop-width} {
+        @content;
+    }
+}
+
+/* ----- Laptop size 1200px or greater ----- */
+@mixin defaultLaptop {
+    @media #{$default-laptop-width} {
+        @content;
+    }
+}
+
+/* ----- laptop size 1350px or greater ----- */
+@mixin largeLaptop {
+    @media #{$large-laptop-width} {
+        @content;
+    }
+}
+
+/* ----- Desktop size 1400px or greater ----- */
+@mixin defaultDesktop {
+    @media #{$default-desktop-width} {
+        @content;
+    }
+}
+
+/* ----- Desktop size 1600px or greater ----- */
+@mixin largeDesktop {
+    @media #{$large-desktop-width} {
+        @content;
+    }
+}

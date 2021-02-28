@@ -1,0 +1,50 @@
+/*
+    Basic Style
+---------------------------------*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $primaryRegular;
+    font-weight: $regularWeight;
+    text-rendering: optimizeLegibility;
+    background-color: $defaultColor;
+    color: $textColor;
+
+    a {
+        @include transition(all, 0.5s, ease);
+        color: $textColor;
+        &:focus, &:active, &:link, &:hover {
+            text-decoration: none;
+            outline: none;
+        }
+
+        &:hover {
+            color: $primaryColor;
+        }
+    }
+
+    P {
+        margin-bottom: 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+        }
+    }
+
+    ol {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+        }
+    }
+}

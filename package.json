@@ -1,0 +1,18 @@
+{
+  "name": "html-starter",
+  "version": "1.0.0",
+  "description": "It's used for row html project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "htmlstarter",
+    "html_starter"
+  ],
+  "author": "Nazmul Hoque",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta2"
+  }
+}

@@ -1,0 +1,50 @@
+
+/*
+    Media Queries
+---------------------------------*/
+
+$sm-mobile-width: (min-width: 320px);
+$md-mobile-width: (min-width: 360px);
+$lg-mobile-width: (min-width: 410px);
+$xl-mobile-width: (min-width: 600px);
+$tablet-width: (min-width: 768px);
+
+/* ----- Less Than 5 Inchi, 320px or Greater ----- */
+
+@mixin smallMobile {
+    @media #{$sm-mobile-width} {
+        @content;
+    }
+}
+
+/* ----- 5.0 To 5.5 Inchi, 360px or Greater ----- */
+
+@mixin mediumMobile {
+    @media #{$md-mobile-width} {
+        @content;
+    }
+}
+
+/* -----  Greater Than 5.5 Inchi, 425px or Greater ----- */
+
+@mixin largeMobile {
+    @media #{$lg-mobile-width} {
+        @content;
+    }
+}
+
+/* -----  Greater Than 6.0 Inchi, 600px or Greater ----- */
+
+@mixin bigMobile {
+    @media #{$xl-mobile-width} {
+        @content;
+    }
+}
+
+/* -----  Tablet Width 768px or Greater ----- */
+
+@mixin tablet {
+    @media #{$tablet-width} {
+        @content;
+    }
+}
